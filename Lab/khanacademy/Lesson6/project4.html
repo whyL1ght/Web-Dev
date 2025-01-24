@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project: Event Invite</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .invite {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 3px solid #ff6f61;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #ff6f61;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .details {
+            margin: 20px 0;
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+        }
+        #main {
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 1.3em;
+            color: rgb(26, 32, 128);
+            text-transform: uppercase;
+        }
+        #main u {
+            text-decoration-color: #ff6f61;
+            text-decoration-thickness: 3px;
+        }
+        #rsvpb {
+            display: inline-block;
+            background-color: #ffcbcb;
+            color: #ffffff;
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        #rsvpb:hover {
+            background-color: #ff6f61;
+            transform: scale(1.05);
+        }
+        #rsvpb:active {
+            background-color: #e85c55;
+            transform: scale(0.95);
+        }
+        .text {
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invite">
+        <h1>You're Invited!</h1>
+        <p class="details">
+            Join us to celebrate <strong>Alisher's 20th Birthday</strong>!<br>
+            <strong>Date:</strong> Saturday, July 26, 2025<br>
+            <strong>Time:</strong> 8:00 PM<br>
+            <strong>Location:</strong> La festa restaurant, 1st floor
+        </p>
+
+        <div id="main"><u>RSVP Today</u></div>
+        <button type="button" id="rsvpb">Yes, Attending</button>
+        <button type="button" id="rsvpb">Not Attending</button>
+
+        <p class="text" id="main">We hope to see you there!</p>
+    </div>
+
+</body>
+</html>
