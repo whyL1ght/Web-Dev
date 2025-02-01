@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:  Arial, sans-serif;
+            line-height: 1.5;
+        }
+        body{
+            background-color: white;
+        }
+
+        .backk{
+            position: relative;
+            background: url('micro1.avif') no-repeat center center/cover;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 50px 80px;
+        }
+
+        .shapka{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .shapka a{
+            text-decoration: none;
+            color: black; 
+            font-size:16px;
+            font-weight: 500;
+        }
+
+        .shapka nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        .shapka a:hover{
+            text-decoration: underline;
+            text-decoration-thickness: 10%;
+        }
+
+        .shapka img {
+            height: 32px;
+        }
+
+        .podclass {
+            background-color: #0067b8;
+            text-align: center;
+            padding: 18px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .podclass a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .podclass a:hover {
+            text-decoration: underline;
+        }
+
+        .ppclass {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 80px;
+            margin: 40px 0;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+        }
+
+        .ppclass div {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ppclass img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .ppclass a {
+            /* text-decoration: none; */
+            color: #0067b8;
+            font-size: 16px;
+        }
+
+        /* .ppclass a:hover {
+            text-decoration: underline;
+        } */
+
+        .left-wh{
+            padding:50px;
+            text-align: left;
+            background-color: white;
+            margin: 20px auto;
+            margin-left: 20px;
+            width: 40%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            /* border-radius: 8px; */
+        }
+        .left-wh p{
+            flex-wrap:wrap;
+            /* font-size: 14px; */
+            /* font-weight: bold; */
+            margin: 10px 0;
+        }
+
+        .bb{
+            font-size: 20px;
+        }
+
+        .aa{
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .left-wh button {
+            background-color: #0067b8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 1px;
+        }
+
+        .left-wh button:hover{
+            background-color: #00549a;
+        }
+
+        .ppclass{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 60px;
+            margin: 40px 0;
+        }
+        .ppclass img {
+            width: 50px;
+            height: auto;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .ppclass a{
+            display: block;
+            margin-top: 10px;
+            /* text-decoration: none; */
+            color: #0067b8;
+            font-size: 14px;
+        }
+
+
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .cont div {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .cont img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cont h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .cont p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .cont button {
+            background-color: #0067b8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 2px;
+        }
+
+        .cont button:hover {
+            background-color: #00549a;
+        }
+    </style>
+</head>
+<body>
+    <div class="shapka">
+        <img src="a1.png" class="micrologo" alt="micrologo">
+        <a href="#">Microsoft 365</a>
+        <a href="#">Teams</a>
+        <a href="#">Copilot</a>
+        <a href="#">Windows</a>
+        <a href="#">Surface</a>
+        <a href="#">More</a>
+    </div>
+    <div class="podclass">
+        <a href ="#">Pay yoyr way, flexible payment options available at checkout. Learn more > </a>
+    </div>
+    <!-- <img src="micro1.avif" alt=""> -->
+    <!-- <img src="micro1.avif" class="photo" alt="backgroundphoto"> -->
+    <div class="backk">
+        <div class="left-wh">
+            <p class="aa">Save up to $500 on select Surface Pro, Copilot+ PC </p> <br>
+            <p class="bb">Score savings on a fast, flexible 2-in-1 built for advanced AI experiences. For a limited time. </p>
+            <br>
+            <button type="button">Shop now</button>
+        </div>
+    </div>
+    <div class="ppclass">
+        <div>
+            <img class="ph" src="p1.svg" alt="serdev">
+            <a class="wd" href="#">Shop Surface devices</a>
+        </div>
+        <div>
+            <img class="ph" src="p2.svg" alt="xbox">
+            <a class="wd" href="#">Shop Xbox games and consoles</a>
+        </div>
+        <div>
+            <img class="ph" src="p3.svg" alt="access">
+            <a class="wd" href="">Shop for accessories</a>
+        </div>
+        <div>
+            <img src="p4.svg" alt="bussi">
+            <a href="#">Shop for your business</a>
+        </div>
+        <div>
+            <img src="p5.svg" alt="pc">
+            <a href="#">Find your next PC</a>
+        </div>
+        <div>
+            <img src="p6.svg" alt="micro365">
+            <a href="">Choose your Microsoft 365</a>
+        </div>
+    </div>
+    <div class="cont">
+        <div>
+            <img src="c1.webp" alt="">
+            <h2>Xbox Series S</h2>
+            <p>Next-gen performance in the smallest Xbox ever.</p>
+            <button type="button">Shop Xbox Series S</button>
+        </div>
+
+        <div>
+            <img src="c2.avif" alt="">
+            <h2>Save up to $500 on select Surface Laptop, Copilot+ PC</h2>
+            <p>Save big on an AI-powered companion made for next-gen performance. For a limited time.</p>
+            <button type="button">Shop now</button>
+        </div>
+
+        <div>
+            <img src="c3.avif" alt="">
+            <h2>Reveal the mysteries within</h2>
+            <p>Get the Xbox Wireless Controller – Pulse Cipher, featuring a transparent red design, silver interior, metallic features, and more.</p>
+            <button type="button">Pre-order now</button>
+        </div>
+
+        <div>
+            <img src="c4.avif" alt="">
+            <h2>Copilot is your AI companion</h2>
+            <p>Always by your side, ready to support you whenever and wherever you need it.</p>
+            <button type="button">Download the Capilot app</button>
+        </div>
+    </div>
+</body>
+</html>
