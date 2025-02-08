@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: white;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 60px; 
+            border-radius: 5px;
+        }
+        .header{
+            background-color: rgb(54, 54, 54);
+            color:#ccc;
+            padding: 10px;
+            text-align: left;
+            font-size: 18px;
+            width: auto;
+        }
+        input {
+            width: 75%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: rgb(15, 81, 174);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-left: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top:15px;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 3px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .done {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .delete {
+            color: red;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .aaa{
+            text-align: left;
+            font-size: 20px;
+            color: rgb(87, 87, 87);
+        }
+        .task-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">ToDoList</div>
+    <div class="container">
+        <p class="aaa">ToDo List</p>
+        <input type="text" id="taskInput" placeholder="New Task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script>
+        document.getElementById("taskInput").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                addTask();
+            }
+        });
+
+        function addTask() {
+            let tinput = document.getElementById("taskInput");
+            let ttext = tinput.value.trim();
+            if (ttext === "") return;
+
+            let li = document.createElement("li");
+            let tcont = document.createElement("div");
+            tcont.classList.add("task-container");
+
+            let checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.onchange = function () {
+                ttelem.classList.toggle("done", this.checked);
+            };
+
+            let ttelem = document.createElement("span");
+            ttelem.textContent = ttext;
+
+            let dbtn = document.createElement("span");
+            dbtn.textContent = "x";
+            dbtn.classList.add("delete");
+            dbtn.onclick = function () {
+                li.remove();
+            };
+
+            tcont.appendChild(checkbox);
+            tcont.appendChild(ttelem);
+            li.appendChild(tcont);
+            li.appendChild(dbtn);
+            document.getElementById("taskList").appendChild(li);
+            tinput.value = "";
+        }
+    </script>
+</body>
+</html>
