@@ -1,0 +1,32 @@
+<main>
+  <h1>Apple Products</h1>
+  <div class="products">
+    <div
+      *ngFor="let product of productList.getProducts()"
+      class="product_info_cont"
+    >
+      <img [src]="product.imageUrl" alt="{{ product.name }}" />
+      <div class="product_info_wp">
+        <div class="product_name">
+          <p>
+            <a [href]="product.link">{{ product.name }}</a>
+          </p>
+        </div>
+        <div class="product_des">
+          <p>{{ product.description }}</p>
+        </div>
+        <p>Rating: {{ product.rating }}</p>
+      </div>
+      <div class="share_link">
+        <a
+          [href]="'https://api.whatsapp.com/send?text=' + product.link"
+          target="_blank"
+          >Поделиться WhatsApp</a
+        >
+        <a [href]="'https://t.me/share/url?url=' + product.link" target="_blank"
+          >Поделиться Telegram</a
+        >
+      </div>
+    </div>
+  </div>
+</main>
