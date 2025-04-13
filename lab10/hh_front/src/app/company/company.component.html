@@ -1,0 +1,22 @@
+<h1>List of Companies</h1>
+
+<!-- <div class="create-company">
+    <button (click)="createCompany()">Add new Company</button>
+</div> -->
+
+<div class="company-container">
+    <p *ngIf="companies.length === 0">Downloading companies...</p>
+    <div (click)="goToVacancies(company.id)" class="company-card" *ngFor="let company of companies">
+        <h3>{{company.name}}</h3>
+
+        <div class="company-info">
+            <p><strong>Description</strong>: {{company.description}}</p>
+            <p><strong>City</strong>: {{company.city}}</p>
+            <p><strong>Address</strong>: {{company.address}}</p>
+        </div>
+
+        <!-- <button class="update">Update Company</button>
+        <button class="delete">Delete Company</button> -->
+
+    </div>
+</div>

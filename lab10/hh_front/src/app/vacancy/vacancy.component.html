@@ -1,0 +1,31 @@
+<h1>List of Vacancies</h1>
+
+<!-- <div class="create-vacancy">
+    <button (click)="createCompany()">Add new Vacancy</button>
+
+</div> -->
+
+<div class="vacancy-container">
+    <p *ngIf="vacancies.length === 0">Downloading vacancies...</p>
+    <div class="vacancy-card" *ngFor="let vacancy of vacancies">
+        <h3>{{vacancy.name}}</h3>
+
+        <div class="vacancy-info">
+            <p><strong>Description</strong>: {{vacancy.description}}</p>
+            <p><strong>Company</strong>: {{vacancy.company}}</p>
+            <p><strong>Salary</strong>: {{vacancy.salary}} tg</p>
+        </div>
+
+
+        <!-- <button (click)="updateVacancy(vacancy.id)" class="update">Update Vacancy</button>
+        <button (click)="deleteVacancy(vacancy.id)" class="delete">Delete Vacancy</button> -->
+    </div>
+</div>
+
+<!-- <div class="showtopten">
+    <button class="show-top-ten" (click)="getTopTenVacancies()">View Top 10 vacancies</button>
+    <h3>Top 10 Vacancies</h3>
+    <ul *ngFor="let vacancy of topTenVacancies">
+        <li>{{vacancy.name}} - {{vacancy.salary}} tg</li>
+    </ul>
+</div> -->
